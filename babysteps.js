@@ -3,9 +3,10 @@
 var total = 0;
 
 // iterate on array returned from process.argv
+var realargs = process.argv.splice(2)
 
-for (var i > 1 in process.argv) {
-    total = total + Number(i)
+for (var i in realargs) {
+    total = total + Number(realargs[i])
 }
 
 console.log(total)
@@ -45,3 +46,19 @@ console.log(result)
 // this is the most common one for looping on an array
 // there is a slightly shorter way to do it
 
+// in any programming language, python included, () serve 2 purposes:
+// 1. is to encapsulate an expression -- any code
+// you can put () around your whole program and JS is fine with that
+// same as math, Order of Operations, do these grouped things first
+// if they have some output, do it with whatever is next
+// in the for loop, () are required, it's encapsulating an expression
+// () are required for FOR loops, syntaxically 
+// 2. to call a function
+// () are required in functions, syntaxically
+// def in python is synonymous with function in JS
+// function name(arguments, you, want, to, pass, it)
+// {} replace : in python
+// {} replace indentation also in python
+// "there is no 8th element, what are you doing, i'm going to crash"
+// Have the power to make mistakes like that but also get more responsibility
+// while is an infinite loop until you tell it to stop
