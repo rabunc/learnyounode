@@ -1,27 +1,9 @@
-// ryan's answer is:
-
 var total = 0;
 
-// iterate on array returned from process.argv
-var realargs = process.argv.splice(2)
-
-for (var i in realargs) {
-    total = total + Number(realargs[i])
-}
-
-console.log(total)
-
-
-
-// the correct answer is:
-
-var result = 0
-
 for (var i = 2; i < process.argv.length; i++) {
-  result += Number(process.argv[i])
+  total = total + Number(process.argv[i])
 }
-
-console.log(result)
+console.log(total)
 
 // same thing as python, but being more verbose and explicit about it
 // showing you what the computer is doing
